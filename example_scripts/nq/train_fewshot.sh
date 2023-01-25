@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --cpus-per-task=10
-#SBATCH --nodes=4
+#SBATCH --cpus-per-task=1
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=8
 #SBATCH --gres=gpu:8
 #SBATCH --time=8:00:00
@@ -13,7 +13,7 @@
 #SBATCH --constraint=volta32gb
 #SBATCH --mem=480GB
 
-size=large
+size=base
 DATA_DIR='/checkpoint/plewis/atlas_opensourcing/'
 
 port=$(shuf -i 15000-16000 -n 1)
