@@ -1,5 +1,5 @@
-export NUMBER_OF_CPUS=40
-export NUMBER_OF_RAM_MB=180000
+export NUMBER_OF_CPUS=2
+export NUMBER_OF_RAM_MB=4096
 
 touch ~/.no_auto_tmux
 
